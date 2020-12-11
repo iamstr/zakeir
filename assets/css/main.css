@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital,wght@0,400;0,700;1,400&display=swap");
+:root {
+  --brand-color-1: #314969;
+  --brand-color-2: #f93c1d;
+  --brand-color-3: #ffa200;
+  --para: #676d77;
+}
+
+body {
+  font-size: 10px;
+  position: relative;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Andika New Basic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--brand-color-1);
+  font-weight: 900;
+}
+
+p,
+a {
+  color: var(--para);
+}
+
+nav,
+main,
+footer {
+  margin: auto 3.5em;
+}
+
+.header {
+  background-color: #fff;
+  border-radius: 0 0 7px 7px;
+  box-shadow: 0 15px 15px rgba(1, 1, 1, 0.1);
+  margin-bottom: 3em;
+  width: 100%;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header .nav-logo {
+  height: 100%;
+  margin-top: 2em;
+  width: 12em;
+}
+
+.header .nav-list {
+  display: none;
+}
+
+.main .hero {
+  margin-bottom: 16em;
+  margin-top: 6em;
+  position: relative;
+}
+
+.main .hero .left {
+  position: absolute;
+  right: 1em;
+  top: 0;
+}
+
+.main .hero-info .hero-headline {
+  font-size: 3em;
+  font-weight: 800;
+  padding-bottom: 1.5em;
+  padding-top: 4em;
+}
+
+.main .hero-info .hero-tagline {
+  font-size: 2em;
+  font-weight: 800;
+  line-height: 2;
+  padding-bottom: 3em;
+}
+
+.main .hero-images .left {
+  top: 66%;
+}
+
+.main .hero-images .img {
+  padding: 6em 0 2em 3em;
+}
+
+.main .hero-images .img:nth-child(2) {
+  padding-bottom: 4em;
+  padding-top: 8em;
+}
+
+.main .why-headline {
+  font-size: 2em;
+  padding-bottom: 2em;
+}
+
+.main .why-info {
+  display: flex;
+  flex-direction: row;
+}
+
+.main .why-info .check {
+  margin-left: -3em;
+  width: 8em;
+}
+
+.main .why-info .why-tagline {
+  font-size: 1.5em;
+  padding-top: 1em;
+}
