@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./dist/main.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>Zakeir Agencies</title>
   </head>
   <body>
@@ -15,7 +16,7 @@
           class="nav-logo"
           loading="lazy"
         />
-        <ul class="nav-list">
+        <ul class="nav-list" id="navItems">
           <li class="list-item">
             <a href="#jobs" class="item-url">Available Jobs</a>
           </li>
@@ -50,41 +51,56 @@
 
         <div class="hero-images">
           <img src="assets/img/red.svg" alt="" class="mobile-only" />
+          <picture>
+            <source
+              srcset="assets/img/img-1@2x.jpg"
+              media="(min-width: 800px)"
+            />
+            <img src="assets/img/img-1.jpg" alt="hero images" class="img" />
+          </picture>
 
-          <img src="assets/img/img-1.jpg" alt="hero images" class="img" />
           <img src="assets/img/yellow.svg" alt="" class="mobile-only left" />
 
-          <img src="assets/img/img-2.jpg" alt="hero images" class="img" />
+          <picture>
+            <source
+              srcset="assets/img/img-2@2x.jpg"
+              media="(min-width: 800px)"
+            />
+            <img src="assets/img/img-2.jpg" alt="hero images" class="img" />
+          </picture>
+
           <img src="assets/img/red.svg" alt="" class="mobile-only" />
         </div>
       </section>
 
       <section id="whyChoseUS" class="why">
         <h3 class="why-headline">Why choose us</h3>
-        <article class="why-info">
-          <img
-            src="assets/img/Icon awesome-check-circle.svg"
-            class="check"
-            alt=""
-          />
-          <p class="why-tagline">Save yourself time and effort</p>
-        </article>
-        <article class="why-info">
-          <img
-            src="assets/img/Icon awesome-check-circle.svg"
-            class="check"
-            alt=""
-          />
-          <p class="why-tagline">Save yourself time and effort</p>
-        </article>
-        <article class="why-info">
-          <img
-            src="assets/img/Icon awesome-check-circle.svg"
-            class="check"
-            alt=""
-          />
-          <p class="why-tagline">Save yourself time and effort</p>
-        </article>
+        <div class="why-box">
+          <article class="why-info">
+            <img
+              src="assets/img/Icon awesome-check-circle.svg"
+              class="check"
+              alt=""
+            />
+            <p class="why-tagline">Save yourself time and effort</p>
+          </article>
+          <article class="why-info">
+            <img
+              src="assets/img/Icon awesome-check-circle.svg"
+              class="check"
+              alt=""
+            />
+            <p class="why-tagline">Save yourself time and effort</p>
+          </article>
+          <article class="why-info">
+            <img
+              src="assets/img/Icon awesome-check-circle.svg"
+              class="check"
+              alt=""
+            />
+            <p class="why-tagline">Save yourself time and effort</p>
+          </article>
+        </div>
       </section>
 
       <section class="more">
@@ -112,35 +128,35 @@
 
       <section class="jobs" id="jobs">
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
         <article class="job">
-          <img src="" alt="" />
+          <img src="assets/img/person-searching-job.svg" alt="" />
           <p class="job-info">Office Admin</p>
         </article>
       </section>
@@ -163,12 +179,14 @@
 
     <footer class="footer">
       <ul class="footer-links">
-        <li class="links-items"><a href="" class="item-url">About us</a></li>
+        <li class="links-items">
+          <a href="" class="item-url">About us</a>
+        </li>
         <li class="links-items">
           <a href="" class="item-url">Privacy policy</a>
         </li>
         <li class="links-items"><a href="" class="item-url">Gallery</a></li>
-        <li class="links-item">
+        <li class="links-items">
           <button class="links-button">Contact us</button>
         </li>
       </ul>
