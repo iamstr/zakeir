@@ -313,6 +313,32 @@ footer {
   }
 }
 
+.countries {
+  padding: 2em;
+  padding-left: 1em;
+
+  &-header {
+    font-size: 2em;
+    padding-bottom: 2em;
+  }
+}
+
+.country-body {
+  display: flex;
+  flex-direction: row;
+
+  .country-flag {
+    padding: 1em 2em;
+    width: 9em;
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+// end of mobile
+
 // Desktop
 @media (min-width: 800px) {
   body {
@@ -348,6 +374,32 @@ footer {
     }
   }
 
+  .hero {
+    display: flex;
+    flex-direction: row;
+
+    &-images {
+      .left {
+        top: 66%;
+      }
+
+      .img.img {
+        height: 25em;
+        padding: 0;
+        width: 25em;
+
+        &:first-child {
+          margin-bottom: 2em;
+        }
+      }
+
+      .img:nth-child(2) {
+        padding-bottom: 4em;
+        padding-top: 1em;
+      }
+    }
+  }
+
   .why {
     background-color: #f8f9fb;
     border-radius: 20px;
@@ -374,6 +426,26 @@ footer {
     }
   }
 
+  .contact {
+    display: flex;
+    flex-direction: row;
+    height: 17em;
+    justify-content: space-between;
+
+    &-header {
+      margin-left: 4em;
+      padding: 3.5em 0;
+    }
+
+    &-button {
+      font-size: 1.4em;
+      height: 3em;
+      margin-right: 4em;
+      margin-top: 4.7em;
+      padding: 0;
+    }
+  }
+
   .footer-links {
     display: flex;
     flex-direction: row;
@@ -390,6 +462,38 @@ footer {
         margin-top: 0;
         padding: 0.5em 1em;
         width: 12em;
+      }
+    }
+  }
+
+  nav,
+  main,
+  footer {
+    margin: auto 5em;
+  }
+
+  .why,
+  .contact,
+  .jobs,
+  .countries,
+  .hero {
+    margin-bottom: 5em;
+  }
+
+  .countries {
+    padding: 2em;
+  }
+
+  .country-body {
+    display: flex;
+    flex-direction: row;
+
+    .country-flag {
+      padding: 1em 2em;
+      width: 9em;
+
+      &:first-child {
+        padding-left: 0;
       }
     }
   }
