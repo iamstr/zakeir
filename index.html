@@ -213,7 +213,51 @@
       <!-- Modal content -->
       <div class="modal-content">
         <span class="close">&times;</span>
-        <p>Some text in the Modal..</p>
+        <form method="POST">
+          <div class="segment">
+            <h1>Contact Us</h1>
+          </div>
+
+          <label>
+            <input
+              type="text"
+              placeholder="Email Address"
+              name="email"
+              aria-required="true"
+              id="email"
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              placeholder="Customer Name"
+              name="fullname"
+              aria-required="true"
+              id="fullname"
+            />
+          </label>
+          <label>
+            <input
+              type="text"
+              placeholder="Customer Telephone"
+              name="phone"
+              aria-required="true"
+              id="phone"
+            />
+          </label>
+
+          <label for="">
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="20"
+            ></textarea>
+          </label>
+          <button class="red" type="submit">
+            <i class="icon ion-md-mail-sharp"></i> Save
+          </button>
+        </form>
       </div>
     </div>
 

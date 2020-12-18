@@ -2,6 +2,7 @@ import styles from "../css/main.scss";
 const show = document.querySelector("#show");
 const navItems = document.querySelector("#navItems");
 const itemUrl = document.querySelectorAll(".item-url");
+const form = document.querySelector("form");
 show.addEventListener("click", e => {
   navItems.classList.add("show");
 });
@@ -52,4 +53,17 @@ window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
   }
+};
+
+// handling form
+
+form.onsubmit = function (e) {
+  e.preventDefault();
+
+  let fectched = fetch("mail/send.php", {
+    method: "POST",
+    body: new FormData(form)
+  });
+
+  fectched.then(response => response.json()).then(data => console.log(data));
 };
